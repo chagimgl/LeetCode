@@ -6,12 +6,10 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         
-        appendix = nums[k + 1:]
         for i in range(k):
             el = nums[-1]
             nums.pop()
             nums.insert(0, el)
-            print(nums)
         
         
 solution = Solution()
